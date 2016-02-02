@@ -3,6 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/knacss.css" rel="stylesheet" type="text/css" />
+<link href="slick-1.5.9/slick/slick.css" rel="stylesheet" type="text/css" />
+<link href="slick-1.5.9/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+
+
+
 
 <title>Antartiste</title>
 <style>
@@ -12,7 +17,7 @@
 	body { 
 		font-family: Cambria;
 		font-weight: 300;
-		color: #0000cc;
+		color: #808080;
 	}
 
 	a:hover {
@@ -62,12 +67,16 @@
 
 </style>
 </head>
-<body style="background-color:rgb(243, 232, 241)">
+<body style="background-color:rgb(239, 239, 239)">
 
 	<header id="header" role="banner" class="line pam">
-	<div class=" myFont">
+		<div class=" myFont">
 			<div class="txtright prm">
 				<span class="title1 toscale">.</span>
+
+				<a class="vartical-align nodecoration pam" href="http://vincentdelrue.blogspot.fr/">
+					<span class="contact grey">Blog</span>
+				</a>				
 				<a class="vartical-align nodecoration" href="https://www.facebook.com/vincentdelrueartiste?fref=ts">
 					<span class="contact grey">Contact</span>
 					<img class="vartical-align" src="images/icon/FB-f-Logo__white_29.png" />
@@ -81,9 +90,15 @@
 			</div>
 			<div  class="txtleft">
 				<span class="title1 right">Vincent Delrue</span>
-				<span class="title2 left">Art abstrait contemporain</span>
 			</div>
 		</div>
+		<div class="grid-1-4">
+			<div class="txtright">
+			</div>
+			<div  class="txtleft">
+				<span class="title2 left">Art abstrait contemporain</span>
+			</div>
+		</div>		
 	</div>	
 
 	</header>
@@ -91,32 +106,57 @@
 		<div class="w20 pam aside">
 			<nav id="navigation" role="navigation">
 				<ul class="pam nodecoration">
-					<li class="pam">Actu</li>
-					<li class="pam">Oeuvres</li>
-					<li class="pam">Bio</li>
-					<li class="pam">Expo</li>
-					<li class="pam">Contact</li>
 				</ul>
 			</nav>
 		</div>
 		<div class="flex-item-fluid pam content">
 			<div class="txtcenter">
-				<img src="images/Nathan_encaustique_60x60cm.jpg" width="400" height="400"/>
-			</div>
-			<div class="txtcenter myFont">
-				<span class="grey">Nathan-encaustique sur toile-60x60 cm</span>
 			</div>
 		</div>
+		
+		<div class="main-slider ">
+			<div class=" myFont">
+				<img src="images/Nathan_encaustique_60x60cm.jpg" width="400" height="400"/>
+				<span class="grey">Nathan-encaustique sur toile-60x60 cm</span>			
+			</div>
+
+			<div class=" myFont">
+				<img src="images/brother-sisters.jpg" width="400" height="400"/>
+				<span class="grey">Frère et soeur</span>			
+			</div>
+
+			<div class=" myFont">
+				<img src="images/le-silence-cire-pigmentee-80x80cm.jpg" width="400" height="400"/>
+				<span class="grey">le silence cire pigmentée 80x80 cm</span>			
+			</div>				
+		</div>	
+
 		<aside class="w20 pam aside">
-			<p class="">aside</p>
-			<div class="txtcenter">
-				<span>Site en construction…Pour l’instant retrouvez toutes mes infos sur <a href="https://www.facebook.com/vincentdelrueartiste?fref=ts">ma page Facebook</a>. merci, à bientôt .</span>
-			</div>					
+			<p class=""></p>		
 		</aside>
 	</div>
 	<footer id="footer" role="contentinfo" class="line pam txtcenter">
-		footer
 	</footer>
+
+
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="slick-1.5.9/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+	  $('.main-slider').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  adaptiveHeight: true,
+		  autoplay: false,
+  		  autoplaySpeed: 5000
+	  });
+	});
+
+</script>
 
 </body>
 </html>

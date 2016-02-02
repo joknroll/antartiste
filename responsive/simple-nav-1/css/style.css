@@ -1,0 +1,173 @@
+/* Switching box model for all elements */
+
+* {
+  box-sizing: border-box;
+}
+/* Responsive Navigation styles begin here */
+
+@media (max-width: 767px) {
+  nav + * {
+    position: relative;
+  }
+  /* Theming opened nav */
+  
+  nav ul {
+    /* maximum height */
+    
+    max-height: 20em;
+    overflow: visible;
+    /* translate with hardware acceleration */
+    
+    -webkit-transform: translateZ(0);
+    
+            transform: translateZ(0);
+    -webkit-transition: max-height .4s;
+    transition: max-height .4s, overflow .4s;
+    will-change: max-height, overflow;
+    /* global styles */
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav a {
+    display: block;
+    padding: 1.2rem;
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    margin-bottom: 2px;
+  }
+  nav a:hover,
+  nav a:focus,
+  nav a:active {
+    background: #eee;
+  }
+  /* Theming closed nav */
+  
+  nav.is-closed ul {
+    max-height: 0;
+    overflow: hidden;
+  }
+  /* Global styling nav button */
+  
+  nav > button {
+    position: absolute;
+    top: .8rem;
+    right: 1rem;
+    z-index: 1;
+    height: 4rem;
+    width: 4rem;
+    background-color: transparent;
+    padding: 0;
+    outline: 0;
+    border: 1px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transition: -webkit-transform .2s;
+    transition: transform .2s;
+  }
+  /*  Removing Firefox's dotted outline on button */
+  
+  nav > button::-moz-focus-inner {
+    border: 0;
+  }
+  nav > button::after,
+  nav > button::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 40%;
+    bottom: 15%;
+    left: 40%;
+    background-color: #333;
+    border-radius: 10px;
+    -webkit-transition: -webkit-transform .2s;
+    transition: transform .2s;
+  }
+  nav > button::before {
+    top: 40%;
+    right: 15%;
+    bottom: 40%;
+    left: 15%;
+  }
+  /* Theming opened nav button */
+  
+  nav:not(.is-closed) > button,
+  nav:not(.is-closed) > button::before {
+    -webkit-transform: rotate(90deg) translateZ(0);
+    -ms-transform: rotate(90deg) translateZ(0);
+    transform: rotate(90deg) translateZ(0);
+  }
+  /* Hide alternate text except from screen readers */
+  
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+  }
+}
+/* BONUS deco */
+/* Global deco */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background: #e3e3e3;
+  color: #000;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+section {
+  position: relative;
+  margin-top: 1rem;
+  ;
+  padding: 1rem;
+  background: #fff;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #345;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+a {
+  color: #345
+}
+
+ul {
+  padding-left: 1em;
+  list-style-position: inside
+}
+
+section li {
+  list-style: none;
+}
+
+section li::before {
+  content: "\2713 ";
+  margin-right: .8rem;
+}
+/* orientation */
+
+@media (orientation: landscape) and (max-device-width: 767px) {
+  html, body {
+    -webkit-text-size-adjust: 100%;
+  }
+}
