@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;}
+
+.header {
+    width: 100%; 
+    overflow: auto; 
+    font-size: 200%;
+    text-align: right;
+    color: #a6a6a6;
+    padding-top: 1em;
+    padding-right: 4em;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.navbar {
+  padding-top: 0.5em;
+  width: 100%;
+  /*background-color: #555;*/
+  overflow: auto;
+  color: #0000cc;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #0000cc;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  /*background-color: #000;*/
+  font-weight: bolder;
+}
+
+.navbar a.active {
+  /*background-color: #04AA6D; */
+}
+
+.navbar a.text-align-right {
+    text-align: right;
+}
+.navbar a.text-align-left {
+    text-align: left;
+}
+
+.content {
+    padding: 4em;
+    width: 100%; 
+    overflow: auto; 
+    text-align: center;
+    color: #0000cc;
+}
+
+.myFont{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+span.title1 {
+    font-size: 200%;
+    text-align: right;
+}
+
+span.grey {
+    color: #a6a6a6;
+}
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.not-bold {
+    font-weight: normal;
+}
+
+#video {
+    display: block; margin-left: auto;margin-right: auto;
+}
+
+
+#statement {
+    display: none; margin-left:auto;margin-right:auto; width: 50%; height: auto;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<body>
+
+<div class="header">
+    Vincent Delrue
+</div>
+
+<div class="navbar">
+  <a href="https://vincentdelrue.blogspot.com/">Blog Art & Encaustique</a>
+  <a class="text-align-right" href="mailto:%76i%6e&#99;%65n&#116;d%65&#108;&#64;&#121;%61ho%6f%2ef%72">Contact</a>
+  <a  href="https://www.facebook.com/vincentdelrueartiste">FB</a>
+  <a class="text-align-left" href="https://www.instagram.com/vincent_delrue/">Insta</a>
+  <a href="#" onclick="toggle()">Statement En/Fr</a>
+
+</div>
+
+<div class="content">
+    <h3 class="not-bold">Prochainement nouvelle série ! Upcoming New Serie !</h3>
+    <h3 class="bold-italic">Incertitudes en Mouvement</h3>
+    <br>
+    <video id="video" controls width="600" poster="background.jpeg">
+        <source src="IMG_4913.mp4" type="video/mp4">
+        <a href="IMG_4913.mp4">MP4</a>
+    </video>
+    <div id="statement">
+        <img width="600" src="statement.JPG" style="display: block; float: left; padding-right: 1em;">
+        <div style="display: block;">
+            <p>Statement En/Fr</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggle() {
+        var video = document.getElementById("video");
+        var statement = document.getElementById("statement");
+        if (video.style.display === "none") {
+            video.style.display = "block";
+            statement.style.display = "none";
+        } else {
+            video.style.display = "none";
+            statement.style.display = "block";
+        }
+    } 
+</script>
+
+</body>
+</html> 
