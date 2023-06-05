@@ -12,7 +12,7 @@ body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    color
     text-align: right;
     color: #a6a6a6;
     padding-top: 1em;
-    padding-right: 4em;
+    padding-right: 2.5em;
     border-bottom: 1px solid #a6a6a6;
 }
 
@@ -26,7 +26,7 @@ body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    color
 
 .navbar a {
   float: left;
-  padding: 12px;
+  padding: 1em;
   color: #0000cc;
   text-decoration: none;
   font-size: 17px;
@@ -38,16 +38,21 @@ body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    color
   /*background-color: #000;*/
   font-weight: bolder;
 }
-
+/*
 .navbar a.active {
-  /*background-color: #04AA6D; */
+  background-color: #04AA6D; 
 }
-
+*/
 .navbar a.text-align-right {
     text-align: right;
 }
 .navbar a.text-align-left {
     text-align: left;
+}
+
+.navbar a.last {
+    text-align: right;
+    padding-right: 5em;
 }
 
 .content {
@@ -81,12 +86,25 @@ span.grey {
 }
 
 #video {
-    display: block; margin-left: auto;margin-right: auto;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 600;
 }
 
-
 #statement {
-    display: none; margin-left:auto;margin-right:auto; width: 50%; height: auto;
+    display: none;
+    margin-left:auto;
+    margin-right:auto; 
+    width: 50%; 
+    height: auto;
+}
+
+#statement img {
+    width: 400px;
+    display: block; 
+    float: left; 
+    padding-right: 1em;
 }
 
 footer {
@@ -100,13 +118,64 @@ footer {
 }
 
 
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+@media (max-width:60rem), (hover: none) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar a.text-align-right {
+        text-align: left;
+    }
+    .navbar a.text-align-left {
+        text-align: left;
+    }
+
+    .navbar a.last {
+        text-align: left;
+    }
+
+    .header {
+        width: 100%; 
+        overflow: auto; 
+        font-size: 200%;
+        text-align: center;
+        color: #a6a6a6;
+        padding-top: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #a6a6a6;
+    }  
+    
+    .content {
+        padding: 0.5em;
+        width: 100%; 
+        overflow: auto; 
+        text-align: center;
+        color: #0000cc;
+    }
+
+    #video {
+        width: 300px;
+    }
+
+    #statement img {
+        width: 150px;
+        float: none; 
+    }
+
+    .content {
+        padding: 0.5em;
+    }
+    
+    body{
+        margin-bottom: 0;
+    }
+    .footer {
+        position: relative;
+    }
+
 }
 </style>
 <body>
@@ -120,7 +189,7 @@ footer {
   <a class="text-align-right" href="mailto:%76i%6e&#99;%65n&#116;d%65&#108;&#64;&#121;%61ho%6f%2ef%72">Contact</a>
   <a  href="https://www.facebook.com/vincentdelrueartiste">FB</a>
   <a class="text-align-left" href="https://www.instagram.com/vincent_delrue/">Insta</a>
-  <a href="#" onclick="toggle()">Statement En/Fr</a>
+  <a class="last" href="#" onclick="toggle()">Statement En/Fr</a>
 
 </div>
 
@@ -128,12 +197,12 @@ footer {
     <h3 class="not-bold">Prochainement nouvelle série ! Upcoming New Serie !</h3>
     <h3 class="bold-italic">Incertitudes en Mouvement</h3>
     <br>
-    <video id="video" controls width="600" poster="background.jpeg">
+    <video id="video" controls  poster="background.jpeg">
         <source src="IMG_4913.mp4" type="video/mp4">
         <a href="IMG_4913.mp4">MP4</a>
     </video>
     <div id="statement">
-        <img width="600" src="statement.JPG" style="display: block; float: left; padding-right: 1em;">
+        <img src="statement.JPG" >
         <div style="display: block;">
             <p>Statement En/Fr</p>
         </div>
