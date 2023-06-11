@@ -1,0 +1,252 @@
+* {box-sizing: border-box}
+body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    color: #0000cc;}
+
+.header {
+    width: 100%; 
+    overflow: auto; 
+    font-size: 200%;
+    text-align: right;
+    color: #a6a6a6;
+    padding-top: 1em;
+    padding-right: 2.5em;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.normal {
+    font-size: 17px;
+}
+
+.navbar {
+  padding-top: 0.5em;
+  width: 100%;
+  /*background-color: #555;*/
+  overflow: auto;
+  color: #0000cc;
+}
+
+.navbar a {
+  float: left;
+  padding: 1em;
+  color: #0000cc;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  /*background-color: #000;*/
+  font-weight: bolder;
+  color: #0000ff;
+}
+/*
+.navbar a.active {
+  background-color: #04AA6D; 
+}
+*/
+.navbar a.text-align-right {
+    text-align: right;
+}
+.navbar a.text-align-left {
+    text-align: left;
+}
+
+.navbar a.last {
+    text-align: right;
+    padding-right: 5em;
+}
+
+.content {
+    padding: 4em;
+    width: 100%; 
+    overflow: auto; 
+    text-align: center;
+    color: #0000cc;
+}
+
+.myFont{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+span.title1 {
+    font-size: 200%;
+    text-align: right;
+}
+
+span.grey {
+    color: #a6a6a6;
+}
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.not-bold {
+    font-weight: normal;
+}
+
+#video {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 350px ;
+}
+
+#statement {
+    /* display: none; */
+    margin-left:auto;
+    margin-right:auto; 
+    width: 50%; 
+    height: auto;
+}
+
+#statement img {
+    width: 400px;
+    display: block; 
+    float: left; 
+    padding-right: 1em;
+}
+
+footer {
+    padding:0.5rem 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    font-size: x-small;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.877);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+a.closebtn {
+  text-align: right;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+}
+
+.statement-content{
+    display: block; 
+    float: right;
+    background-color: white;
+    padding: 1em;
+    max-width: 30em;
+}
+
+svg:hover {
+  fill: white;
+  background-color: #0000cc;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+@media (max-width:60rem), (hover: none) {
+    .navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .navbar a.text-align-right {
+        text-align: center;
+    }
+    .navbar a.text-align-left {
+        text-align: center;
+    }
+
+    .navbar a.social {
+        display: block;
+        width: 33% ;
+    }
+
+    .navbar a.last {
+        text-align: center;
+        padding-right: 0.5em;
+    }
+
+    .header {
+        width: 100%; 
+        overflow: auto; 
+        font-size: 200%;
+        text-align: center;
+        color: #a6a6a6;
+        padding-top: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #a6a6a6;
+    }  
+    
+    .content {
+        padding: 0.5em;
+        margin-top: 2em;
+        width: 100%; 
+        overflow: auto; 
+        text-align: center;
+        color: #0000cc;
+    }
+
+    #video {
+        width: 300px;
+        height: 200px;
+    }
+
+    #statement{
+        clear: both;
+        text-align: center;
+        width: 90%; 
+    }
+
+    #statement img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        float: none; 
+    }
+
+    .content {
+        padding: 0.5em;
+    }
+
+    body{
+        padding-bottom: 100px;
+    }
+    
+    footer {
+        padding-bottom: -30px;
+    }
+    
+    a.closebtn {
+        font-size: 40px;
+    }
+
+    .statement-content{
+        float: none;
+    }
+
+}
