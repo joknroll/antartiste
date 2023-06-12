@@ -1,3 +1,4 @@
+
 * {box-sizing: border-box}
 body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    color: #0000cc;}
 
@@ -30,7 +31,7 @@ body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    color
   color: #0000cc;
   text-decoration: none;
   font-size: 17px;
-  width: 20%; /* Four links of equal widths */
+  /* width: 20%; /* Four links of equal widths */
   text-align: center;
 }
 
@@ -46,14 +47,31 @@ body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    color
 */
 .navbar a.text-align-right {
     text-align: right;
+    padding-right: 0.1em;
+    width: 23%; 
 }
 .navbar a.text-align-left {
     text-align: left;
+    padding-left: 0.1em;
+    width: 23%; 
 }
 
 .navbar a.last {
     text-align: right;
     padding-right: 5em;
+    width: 25%; 
+}
+
+.navbar a.first {
+    width: 25%; 
+    text-align: left;
+    padding-left: 5em;
+}
+
+.navbar a.middle {
+    width: 4%; 
+    padding-left: 0.1em;
+    padding-right: 0.1em;
 }
 
 .content {
@@ -158,12 +176,6 @@ a.closebtn {
     max-width: 30em;
 }
 
-svg:hover {
-  fill: white;
-  background-color: #0000cc;
-  border-radius: 50%;
-  padding: 2px;
-}
 
 @media (max-width:60rem), (hover: none) {
     .navbar a {
@@ -173,21 +185,23 @@ svg:hover {
         padding: 0.5em;
     }
 
-    .navbar a.text-align-right {
-        text-align: center;
-    }
-    .navbar a.text-align-left {
-        text-align: center;
-    }
 
     .navbar a.social {
         display: block;
         width: 33% ;
+        text-align: center;
     }
 
     .navbar a.last {
         text-align: center;
-        padding-right: 0.5em;
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .navbar a.first {
+        width: 100%;
+        padding: 0.5em;
+        text-align: center;
     }
 
     .header {
