@@ -124,12 +124,11 @@ span.grey {
 .statement figure {
     display: block; 
     float: left; 
-    padding-right: 1em;
     width: 40%;
 }
 
 .statement figure img {
-    width: 80%;
+    width: 100%;
 }
 
 footer {
