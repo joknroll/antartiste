@@ -25,50 +25,51 @@ body {font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    color
   color: #0000cc;
 }
 
-.navbar a {
-  float: left;
-  padding: 1em;
-  color: #0000cc;
-  text-decoration: none;
-  font-size: 17px;
-  /* width: 20%; /* Four links of equal widths */
-  text-align: center;
-}
+.navbar span {
+    float: left;
+    padding: 1em;
+    color: #0000cc;
+    text-decoration: none;
+    font-size: 17px;
+    /* width: 20%; /* Four links of equal widths */
+    text-align: center;
+  }
 
-.navbar a:hover {
+.navbar span a:hover {
   /*background-color: #000;*/
   font-weight: bolder;
   color: #0000ff;
+  text-decoration: underline;
 }
 /*
 .navbar a.active {
   background-color: #04AA6D; 
 }
 */
-.navbar a.text-align-right {
+.navbar span.text-align-right {
     text-align: right;
     padding-right: 0.1em;
     width: 23%; 
 }
-.navbar a.text-align-left {
+.navbar span.text-align-left {
     text-align: left;
     padding-left: 0.1em;
     width: 23%; 
 }
 
-.navbar a.last {
+.navbar span.last {
     text-align: right;
     padding-right: 5em;
     width: 25%; 
 }
 
-.navbar a.first {
+.navbar span.first {
     width: 25%; 
     text-align: left;
     padding-left: 5em;
 }
 
-.navbar a.middle {
+.navbar span.middle {
     width: 4%; 
     padding-left: 0.1em;
     padding-right: 0.1em;
@@ -124,7 +125,7 @@ span.grey {
 .statement figure {
     display: block; 
     float: left; 
-    width: 40%;
+    width: 30%;
 }
 
 .statement figure img {
@@ -200,7 +201,7 @@ a.closebtn {
 }
 
 @media (max-width:60rem), (hover: none) {
-    .navbar a {
+    .navbar span {
         display: block;
         width: 100%;
         text-align: center;
@@ -208,19 +209,19 @@ a.closebtn {
     }
 
 
-    .navbar a.social {
+    .navbar span.social {
         display: block;
         width: 33% ;
         text-align: center;
     }
 
-    .navbar a.last {
+    .navbar span.last {
         text-align: center;
         width: 100%;
         padding: 0.5em;
     }
 
-    .navbar a.first {
+    .navbar span.first {
         width: 100%;
         padding: 0.5em;
         text-align: center;
@@ -261,7 +262,7 @@ a.closebtn {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 60%;
         float: none; 
     }
 
