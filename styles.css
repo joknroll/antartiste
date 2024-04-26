@@ -231,12 +231,19 @@ a.closebtn {
     }
 
     .navbar span.first a{
-        display: inline;
-        float: none;
+        display: block;
+        width: 45% ;
+        text-align: center;
+        font-size: smaller;
     }
 
+
     .navbar span.first a.blog-link {
-        margin : 1em;
+        margin : 0;
+    }
+
+    .navbar span.first a.prowax-link {
+        float: right;
     }
 
     .navbar span.social {
