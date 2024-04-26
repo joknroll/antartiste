@@ -313,6 +313,7 @@ a.closebtn {
     
     footer {
         margin-bottom: 5em;
+        position: inherit;
     }
     
     a.closebtn {
