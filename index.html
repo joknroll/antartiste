@@ -7,7 +7,10 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <title>Vincent Delrue - Artiste</title>
-        <meta name="description" content="Vincent Delrue is french encaustic artiste from Lille (north of France). His work is oriented around four themes : color, material, movement and human. Some of his recent works were exhibited during the 15th Encaustic Conference in Provincetown, Massachusetts, USA.">
+        <meta name="description" content="Vincent Delrue is french encaustic artiste from Lille (north of France). His work is oriented around four themes : color, material, movement and human. Some of his recent works were exhibited during the 15th Encaustic Conference in Provincetown, Massachusetts, USA.">  
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
     </head>
 <body>
     <div class="header">
@@ -16,36 +19,61 @@
 
     <div class="navbar">
         <span class="first">
-            <a  href="https://vincentdelrue.blogspot.com/" target="_blank">Blog Art & Encaustic</a>
+            <a class="blog-link" href="https://vincentdelrue.blogspot.com/" target="_blank">Blog Art & Encaustic</a>
+            <a class="prowax-link" href="https://vincentdelrue.blogspot.com/2022/01/prowax-journal-table-of-content-test.html" target="_blank">ProWax Journal Index</a>
         </span>
         <span class="text-align-right social">
             <a   href="mailto:%76i%6e&#99;%65n&#116;d%65&#108;&#64;&#121;%61ho%6f%2ef%72" title="email" target="_blank"> 
                 <svg onmouseover="hoverContact(this)" onmouseout="outContact(this)" id="contact" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#0000cc"><path d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z"/></svg>
             </a>
         </span>
-        <span class="social middle">
+        <span class="social middle1">
             <a  href="https://www.facebook.com/vincentdelrueartiste" target="_blank" title="facebook"> 
                 <svg onmouseover="hoverFacebook(this)" onmouseout="outFacebook(this)" id="facebook"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#0000cc"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg>  
             </a>
         </span>
-        <span class="text-align-left social">
+        <span class="middle2 social">
             <a   href="https://www.instagram.com/vincent_delrue/" target="_blank" title="Insta">
                 <svg onmouseover="hoverInsta(this)" onmouseout="outInsta(this)" id="insta" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#0000cc"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"/></svg>
             </a>
         </span>
+
+        
+        <span class="text-align-left social">
+            <a   href="https://www.youtube.com/@vincentdelrueartiste2500" target="_blank" title="youtube">
+                <svg onmouseover="hoverYoutube(this)" onmouseout="outYoutube(this)"  id="youtube" width="24" height="24" fill="#0000cc" stroke-width=".00512" version="1.1" viewBox="-143 145 15.36 15.36" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_iconCarrier" transform="translate(-2.5976 -2.0876)"> <g transform="matrix(.02944 0 0 .02944 -136.03 142.87)" stroke-width="9.7331">  <path d="m207.41 303.71h-183.53s-48.235 0-48.235 48.235v100.08s0 48.235 48.235 48.235h183.53s48.235 0 48.235-48.235v-100.08s0-48.235-48.235-48.235zm-141.89 158.72v-120.75l122.48 65.425z"/> <path d="m112.34 186.81c119.87 0 217.39 97.521 217.39 217.39s-97.521 217.39-217.39 217.39c-119.87 0-217.39-97.521-217.39-217.39s97.521-217.39 217.39-217.39zm0-43.478c-144.06 0-260.87 116.8-260.87 260.87s116.8 260.87 260.87 260.87c144.06 0 260.87-116.8 260.87-260.87s-116.8-260.87-260.87-260.87z" /></g> </g></svg>
+            </a>
+        </span>   
+
         
         <span class="last">Statement <a  href="#" onclick="onEn()">EN</a> / <a  href="#" onclick="onFr()">FR</a></span>
     </div>
 
     <div class="content">
         <h3 class="not-bold">Nouvelle série / New Serie !</h3>
+        
         <h3 class="bold-italic">Incertitudes en Mouvement</h3>
-        <iframe id="video" 
-            src="https://www.youtube.com/embed/07AbfIDQ35s?si=_RmRFtelBBZn-Tvv" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
+
+        <div class="main-slider">
+            <div class="text-align-center">
+                <img class="slider-element" src="images/IMG_4508.jpg" width="400" height="400"/>
+                <span class="main-blue"><b>Incertitudes en Mouvement IV</b>, Encaustic on canvas, 80x80 cm</span>			
+            </div>
+            <div class="text-align-center">
+                <img class="slider-element" src="images/incertitudes1.jpg" width="400" height="400"/>
+                <span class="main-blue"><b>Incertitudes en Mouvement </b></span>			
+            </div>
+
+            <div class="text-align-center">
+                <img class="slider-element" src="images/incertitudes2.jpg" width="400" height="400"/>
+                <span class="main-blue"><b>Incertitudes en Mouvement </b></span>			
+            </div>
+
+            <div class="text-align-center">
+                <img class="slider-element" src="images/incertitudes3.jpg" width="400" height="400"/>
+                <span class="main-blue"><b>Incertitudes en Mouvement </b></span>			
+            </div>				
+        </div>	
 
     </div>
     <div id="overlay">
@@ -144,7 +172,8 @@
     <footer>
         <p>Created by <a href="http://joknroll.fr/" target="_blank" title="Joknroll">Joknroll</a>, 2023</p>
     </footer>
-
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
 
         function en(){
@@ -188,39 +217,59 @@
         let contact = document.getElementById("contact");
         let facebook = document.getElementById("facebook");
         let insta = document.getElementById("insta");
+        let youtube = document.getElementById("youtube");        
         contact.style = styleNormal;
         facebook.style = styleNormal;
         insta.style = styleNormal;
+        youtube.style = styleNormal;
 
          function hoverContact(x) {
             fade(insta);
             fade(facebook);
+            fade(youtube);
         }
 
         function outContact(x) {
             insta.style = styleNormal;
             facebook.style = styleNormal;
+            youtube.style = styleNormal;
         }
 
         function hoverFacebook(x) {
             fade(insta);
             fade(contact);
+            fade(youtube);
         }
 
         function outFacebook(x) {
             insta.style = styleNormal;
             contact.style = styleNormal;
+            youtube.style = styleNormal;
         }
 
         function hoverInsta(x) {
             fade(contact);
             fade(facebook);
+            fade(youtube);
         }
 
         function outInsta(x) {
             contact.style = styleNormal;
             facebook.style = styleNormal;
+            youtube.style = styleNormal;
         }
+
+        function hoverYoutube(x) {
+            fade(insta);
+            fade(facebook);
+            fade(contact);
+        }
+
+        function outYoutube(x) {
+            contact.style = styleNormal;
+            facebook.style = styleNormal;
+            insta.style = styleNormal;
+        }        
 
         function fade(el){
             el.style.backgroundColor = '#0000cc52';
@@ -232,6 +281,19 @@
         const linkElement = document.querySelector('link[rel=icon]');
         linkElement.href = "favicon.ico"; 
         document.title = "Vincent Delrue - Artiste"; 
+
+
+
+        $(document).ready(function(){
+            $('.main-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+            });
+        });
+
     </script>
 </body>
 </html> 
