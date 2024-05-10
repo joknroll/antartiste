@@ -223,6 +223,17 @@ a.closebtn {
     margin-right: auto
 }	
 
+img.long {
+    width: 300px;
+    height: 450px;
+}
+
+img.square {
+    width: 300px;
+    height: 300px;
+}
+
+
 @media (max-width:60rem), (hover: none) {
     .navbar span {
         display: block;
@@ -333,4 +344,6 @@ a.closebtn {
     .lang a{
         font-size: 20px;
     }
+
+    
 }
